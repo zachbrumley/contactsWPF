@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace contactsWPF
 {
@@ -24,8 +25,24 @@ namespace contactsWPF
         {
             InitializeComponent();
         }
+            //allows custom images to be uploaded for fun
+        private void btnChangeBG_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Uri fileUri = new Uri(openFileDialog.FileName);
+                imgBG.Source = new BitmapImage(fileUri);
+            }
+        }
+
+
+
+
 
         //added temporary text file for when things get working
         //path : C:\\Users\\bille\\source\\repos\\contactsWPF\\contactsWPF
+
+
     }
 }

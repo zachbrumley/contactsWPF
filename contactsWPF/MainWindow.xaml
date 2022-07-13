@@ -13,8 +13,9 @@
         <Button x:Name="btnModifyNumber" HorizontalAlignment="Left" Height="35" Margin="200,389,0,0" VerticalAlignment="Top" Width="90" Content="Modify Number"/>
         <Button x:Name="btnModifyEmail" HorizontalAlignment="Left" Height="35" Margin="295,389,0,0" VerticalAlignment="Top" Width="90" Content="Modify eMail"/>
         <Button x:Name="btnListContacts" HorizontalAlignment="Left" Height="35" Margin="390,389,0,0" VerticalAlignment="Top" Width="90" Content="List Contacts"/>
-        <TextBox x:Name="txtH" HorizontalAlignment="Left" Height="25" Margin="55,311,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="95"/>
-        <TextBox x:Name="txtW" HorizontalAlignment="Left" Height="25" Margin="155,311,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="95"/>
+        <Image x:Name="imgBG" HorizontalAlignment="Left" Height="330" Margin="66,10,0,0" VerticalAlignment="Top" Width="345"/>
+        <Button x:Name="btnChangeBG" Content="Change Background" HorizontalAlignment="Left" Height="23" Margin="10,354,0,0" VerticalAlignment="Top" Width="120" Click="btnChangeBG_Click"/>
+
 
     </Grid>
 </Window>
